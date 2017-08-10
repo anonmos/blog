@@ -99,6 +99,7 @@ h6, .h6 {
   border-bottom: .05rem solid #eee;
 }
 .blog-title {
+  margin-top: 50px;
   margin-bottom: 0;
   font-size: 2rem;
   font-weight: normal;
@@ -142,6 +143,14 @@ h6, .h6 {
 }
 .blog-pagination > .btn {
   border-radius: 2rem;
+}
+
+img.headshot {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
 }
 
 
