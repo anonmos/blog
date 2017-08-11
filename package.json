@@ -7,6 +7,8 @@
   "author": "Tim Growney <tim.growney@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "aws-sdk": "^2.96.0",
     "typescript": "^2.4.2",
     "webpack": "^3.5.2"
   }
