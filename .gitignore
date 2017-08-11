@@ -3,3 +3,5 @@ node_modules
 static/img
 js/**/*.js
 static/css/fonts
+config.env
+build
