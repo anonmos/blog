@@ -1,15 +1,15 @@
-import {BlogPost, BlogSeeker} from "../lib/BlogSeeker";
+//import {BlogPostMeta, BlogSeeker} from "../lib/BlogSeeker";
 
 export default async function init() {
-    let seeker = new BlogSeeker();
+    /*let seeker = new BlogSeeker();
     let blogList = <HTMLDivElement> document.getElementById('blog-list');
     let posts = await seeker.getBlogPosts(1);
     posts.forEach((post) => {
         blogList.appendChild(createBlogMarkup(post));
-    })
+    })*/
 }
 
-function createBlogMarkup(post: BlogPost): HTMLDivElement {
+/*function createBlogMarkup(post: BlogPostMeta): HTMLDivElement {
 
     let container = document.createElement('div');
     container.classList.add('blog-post');
@@ -31,4 +31,4 @@ function createBlogMarkup(post: BlogPost): HTMLDivElement {
     container.appendChild(blogSubject);
 
     return container;
-}
+}*/
