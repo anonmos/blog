@@ -4,6 +4,11 @@
       "filename": "170817-first-post.md",
       "title": "A Title",
       "short": "This is a short thing"
+    },
+    {
+      "filename": "170917-second-post.md",
+      "title": "Another Title",
+      "short": "This is a second blog post"
     }
   ]
 }

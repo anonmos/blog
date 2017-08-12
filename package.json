@@ -6,10 +6,21 @@
   "repository": "git@github.com:anonmos/blog.git",
   "author": "Tim Growney <tim.growney@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "node_modules/webpack/bin/webpack.js",
+    "server": "node js/dev/devserver.js"
+  },
   "devDependencies": {
     "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^8.0.20",
     "aws-sdk": "^2.96.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "express": "^4.15.4",
+    "path": "^0.12.7",
+    "ts-loader": "^2.3.2",
     "typescript": "^2.4.2",
-    "webpack": "^3.5.2"
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
   }
 }
