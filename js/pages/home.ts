@@ -22,9 +22,15 @@ function createBlogMarkup(post: BlogPostMeta): HTMLDivElement {
 
     let blogSubject = document.createElement('p');
 
-    blogSubject.innerHTML = post.short;
+    let postLink = document.createElement('a');
+    postLink.setAttribute(`href`, `post.html?post=${post.filename}`);
+    postLink.innerHTML = ` ... Read More`;
+
+    blogSubject.innerHTML = `${post.short}`;
+    blogSubject.appendChild(postLink);
     blogDate.innerHTML = parseDate(post.filename);
     blogTitle.innerHTML = post.title;
+
 
     container.appendChild(blogTitle);
     container.appendChild(blogDate);
