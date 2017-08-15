@@ -1,5 +1,3 @@
-import {getCurrentDomainHost} from "./URLHelper";
-
 export interface BlogPostMeta {
     filename: string,
     title: string,

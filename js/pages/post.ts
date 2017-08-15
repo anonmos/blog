@@ -20,8 +20,7 @@ export default async function init() {
         return;
     }
 
-    let content = markdownConverter.makeHtml(rawPostContent);
-    postContainer.innerHTML = content;
+    postContainer.innerHTML = markdownConverter.makeHtml(rawPostContent);
 }
 
 function setErrorMessage(message: string, errorElement: HTMLDivElement) {
