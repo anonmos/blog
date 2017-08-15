@@ -1,3 +1,11 @@
 import home from './pages/home';
+import post from './pages/post';
+import {getCurrentHtmlPageName} from './lib/URLHelper';
 
-home();
+switch(getCurrentHtmlPageName()) {
+    case `post`: 
+        post();
+        break;
+    default:
+        home();
+}

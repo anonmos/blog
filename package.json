@@ -13,11 +13,13 @@
   "devDependencies": {
     "@types/aws-sdk": "^2.7.0",
     "@types/node": "^8.0.20",
+    "@types/showdown": "^1.4.32",
     "aws-sdk": "^2.96.0",
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.0.1",
     "express": "^4.15.4",
     "path": "^0.12.7",
+    "showdown": "^1.7.2",
     "ts-loader": "^2.3.2",
     "typescript": "^2.4.2",
     "webpack": "^3.5.4",
