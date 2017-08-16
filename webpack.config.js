@@ -1,6 +1,7 @@
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -25,6 +26,12 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['build']),
-    new CopyWebpackPlugin([{from: 'static', to: '../'}])
+    new CopyWebpackPlugin([{from: 'static', to: '../'}]),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      popper: "popper.js",
+      bootstrap: "bootstrap"
+    })
   ]
 }
