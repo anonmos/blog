@@ -1,14 +1,9 @@
 {
   "posts": [
     {
-      "filename": "170817-first-post.md",
-      "title": "A Title",
-      "short": "This is a short thing"
-    },
-    {
-      "filename": "170917-second-post.md",
-      "title": "Another Title",
-      "short": "This is a second blog post"
+      "filename": "170816-static-blog-part-1.md",
+      "title": "On Static Blogging: Part 1",
+      "short": "After exploring several blogging platforms and static blogging systems, I've decided to write my own!  This post is the start of that journey, and how you yourself can join."
     }
   ]
 }
