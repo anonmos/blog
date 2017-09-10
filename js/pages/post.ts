@@ -5,7 +5,7 @@ import * as Showdown from 'showdown';
 export default async function init() {
     let postContainer = <HTMLDivElement> document.getElementById('post-container');
     let title = <HTMLTitleElement> document.getElementsByTagName('title')[0];
-    let markdownConverter = new Showdown.Converter();
+    let markdownConverter = new Showdown.Converter({'parseImgDimensions': true});
 
     let queryStringParams = getQueryStringParams();
 
