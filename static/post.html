@@ -29,6 +29,39 @@
 </div>
 
 <footer class="blog-footer">
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+      var page_url = window.location.hostname + window.location.pathname;
+      var post_id = window.location.href.split('?')[1].split('=');
+      var post_with_page = "";
+      var final_identifier = "";
+
+      for (var i = 0; i < post_id.length; ++i) {
+        if (post_id[i] === "post") {
+          post_with_page = page_url + "?post=" + post_id[i + 1].split('#')[0];
+          final_identifier = post_id[i + 1].split('#')[0];
+        }
+      }
+
+      var disqus_config = function () {
+      this.page.url = post_with_page;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = final_identifier; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://timgrowney.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
     <p>
         <a href="#">Back to top</a>
     </p>
