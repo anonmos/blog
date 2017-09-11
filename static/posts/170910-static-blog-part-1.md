@@ -8,7 +8,7 @@ I had a couple of loose goals for this:
 - Simplicity (emphasis on _loose goals_)
 - Easy to deploy
 - Use a technology or three that I haven't worked with extensively
-- Open source the whole thing!
+- [Open source the whole thing!](https://github.com/anonmos/blog)
 
 The site you're visiting now, and the post that you're reading, is the first evolution of that effort.  This first series
 of posts will detail how I set this all up, and how the underlying code repository for this blog works
